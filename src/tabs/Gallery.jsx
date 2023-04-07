@@ -48,8 +48,8 @@ export class Gallery extends Component {
   };
 
   onHandleLoadMoreBtnClick = () => {
-    this.setState(prevState => ({
-      page: (prevState.page += 1),
+    this.setState(({ page }) => ({
+      page: (page += 1),
     }));
   };
 
